@@ -1,17 +1,16 @@
-p{
-	letter-spacing: 5px;
-}
-
-#titulo{
-	font-size: 600%;
+.titulo{
+	font-size: 80px;
 	color:#4F55B8;
-	line-height: 0;
+	background-color: #ACF0FD;
+	font-family: 'Raleway', sans-serif;
+	font-weight: lighter;
 }
 
-#sub{
-	font-size: 200%;
+.titulo .sub{
+	font-size: 30px;
 	color:#5080B8;
 	line-height: 10%;
+	letter-spacing: 5px;
 }
 
 a{
@@ -52,8 +51,8 @@ button:active{
 
 ul{
 	font-size: 125%;
+	width: 80%;
 	padding: 0;
-	width: 35%;
 	text-align: left;
 }
 
@@ -74,4 +73,41 @@ ul li:nth-child(odd) {
 
 li#nueva{
 	list-style-type: disc;
+}
+
+
+@media screen and (max-width : 532px)
+{
+  .titulo
+  {
+    font-size:40px;
+    color:#4F55B8;
+  }
+  .titulo .sub
+  {
+  	font-size: 20px;
+  }
+}
+
+
+@media screen and (max-width : 401px)
+{
+  
+  .titulo .sub
+  {
+  	font-size: 10px;
+  }
+
+  ul{
+	font-size: 80%;
+  }
+}
+
+@media screen and (max-width : 273px)
+{
+  .titulo .sub
+  {
+  	font-size: 0;
+  	color:#4F55B8;
+  }
 }
