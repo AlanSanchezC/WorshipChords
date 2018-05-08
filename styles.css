@@ -1,9 +1,6 @@
 .titulo{
 	font-size: 80px;
 	color:#4F55B8;
-	background-color: #ACF0FD;
-	font-family: 'Raleway', sans-serif;
-	font-weight: lighter;
 }
 
 .titulo .sub{
@@ -13,47 +10,34 @@
 	letter-spacing: 5px;
 }
 
-a{
-	text-decoration: none;
+.botonesYLista{
+	height: 90px;
 }
 
 a:link{
-	color:#0956C1;
+	color:#34387f;
 }
 
-a:visited{
-	color:#0956C1;
-}
-
-a:hover{
-	color:purple;
+li a:hover{
+	color:#6e72c4;
+	cursor: pointer;
 }
 
 body{
-	background-color: #ACF0FD;
+	background-color: #cdf6fe;
 	font-family: 'Raleway', sans-serif;
 	font-weight: lighter;
 }
 
-button{
-	cursor: pointer;
-	border: 2px solid #4F55B8;
-	background-color: #ACF0FD;
-	padding: 1%;
-	width: 10%;
-	font-size: 20px;
-	color: #4F55B8;	
-}
-
-button:active{
-	background-color: white;
-}
-
 ul{
-	font-size: 125%;
+	font-size: 130%;
 	width: 80%;
 	padding: 0;
 	text-align: left;
+}
+
+.nombress{
+	font-size: 14px;
 }
 
 ul li
@@ -64,50 +48,109 @@ ul li
 }
 
 ul li:nth-child(even) {
-    background-color: #eee;
+    background-color: #f7f5ed;
 }
 
 ul li:nth-child(odd) {
    background-color:#fff;
 }
 
-li#nueva{
-	list-style-type: disc;
+li{
+	border-radius: 8px;
 }
 
+input[type=button]{
+	font-size: 20px;
+	font-family: 'Raleway';
+	border-radius: 25px;
+	border: none;
+	color: white;
+	-webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+[type=button].bCrear{
+	padding: 10px 30px;
+	background-color: #7f83cc;
+}
+
+[type=button].bCrear:hover{
+	background-color: #494eb6;
+	cursor: pointer;
+}
+
+
+[type=submit].bVerLista{
+	padding: 10px 45px;
+	background-color: #ffaa80;
+	font-size: 20px;
+	font-family: 'Raleway';
+	border-radius: 25px;
+	border: none;
+	color: white;
+	-webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+[type=submit].bVerLista:hover{
+	background-color: #ff7733;
+	cursor: pointer;
+}
+
+[type=button].bCancelar {
+	font-size: 17px;
+	padding: 10px 10px;
+	background-color: #ff6666;
+}
+
+[type=button].bCancelar:hover{
+	background-color: #ff1a1a;
+	cursor: pointer;
+}
+
+.nueva{
+	list-style-type: disc;
+}
 
 @media screen and (max-width : 532px)
 {
   .titulo
   {
-    font-size:40px;
+    font-size:50px;
     color:#4F55B8;
   }
   .titulo .sub
   {
   	font-size: 20px;
   }
-}
 
-
-@media screen and (max-width : 401px)
-{
-  
-  .titulo .sub
-  {
+  .nombress{
   	font-size: 10px;
   }
 
-  ul{
-	font-size: 80%;
+  input[type=button].bCrear {
+      font-size: 17px;
+	  padding: 5px 15px;
   }
+  input[type=button].bCancelar {
+      font-size: 17px;
+	  padding: 5px 7px;
+  }
+  input[type=submit].bVerLista {
+      font-size: 17px;
+	  padding: 5px 25px;
+  }
+  
 }
 
-@media screen and (max-width : 273px)
+@media only screen and (max-width : 414px)
 {
+  ul{
+	font-size: 140%;
+  }
+
   .titulo .sub
   {
-  	font-size: 0;
-  	color:#4F55B8;
+  	font-size: 10px;
   }
 }
